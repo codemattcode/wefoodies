@@ -1,0 +1,139 @@
+@import colour
+@import flex
+@import font
+@import form
+@import reset
+@import utility
+@import breakpoints
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round)
+
+/* ----------------------- */
+/* COLOURS */
+/* ----------------------- */
+$swiss-orange: #e55818
+$swiss-teal: #408582
+$swiss-grey: #f6f1ed
+$swiss-pea: #7eb675
+$swiss-green: #3f542d
+$swiss-beige: #d1c1b2
+$swiss-brown: #855c41
+$swiss-black: #221f1b
+$swiss-pink: #e9d2c8
+$swiss-red: #c31d23
+/* ----------------------- */
+/* BASELINE */
+/* ----------------------- */
+html, body
+  background: $swiss-pink
+  font-family: "roboto", sans-serif
+  font-weight: $regular
+  color: $nearBlack
+  font-size: 24px
+  line-height: 1.2
+  letter-spacing: 1px
+  word-spacing: 3px
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  @media only screen and (min-width: 420px)
+    font-size: 16px
+  @media only screen and (min-width: 1400px)
+    font-size: 28px
+  font-smoothing: subpixel-antialiased
+  // -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  // user-select: none
+  ::selection
+    background: yellow
+img
+  max-width: 100%
+
+/* ---------------------------------------------- */
+/* GRID
+/* ---------------------------------------------- */
+
+.row
+  max-width: 97%
+  margin: 0 auto
+
+
+
+/* ----------------------- */
+/* SITE SPECIFIC */
+/* ----------------------- */
+header
+  background-image: url(../img/small-image2.jpg)
+  +cover-fixed
+  .top
+    background-color: #f6f1ed
+    padding: 10px 30px
+/* ----------------------- */
+/* LOGO */
+/* ----------------------- */
+span#logo
+  font-family: 'Varela Round', sans-serif
+  color: $swiss-red
+/* ----------------------- */
+/* NAVIGATION */
+/* ----------------------- */
+nav
+  float: right
+  font-family: 'Varela Round', sans-serif
+li > a
+  font-size: .75rem
+  color: $swiss-red
+  border-bottom: 2px solid black
+a
+  text-decoration: none
+  margin-left: 20px
+/* ----------------------- */
+/* BIG TITLE AND SUB */
+/* ----------------------- */
+#landing
+  margin-top: 40px
+  width: 100%
+  padding: 100px
+  background: $swiss-grey
+  +centercenter
+h1, h2
+  font-size: 6.5rem
+  font-weight: 900
+  color: $swiss-red
+  font-family: 'Varela Round', sans-serif
+h2
+  font-size: 3rem
+  font-weight: 300
+  color: black
+  font-family: 'Varela Round', sans-serif
+
+/* ----------------------- */
+/* 3 STACK IMAGES */
+/* ----------------------- */
+#stack
+  background: #fff
+  padding: 30px 0px
+.big-image
+  float: left
+  width: 130%
+.small-images
+  margin-left: 30%
+  float: left
+  width: 56.8%
+.img-top
+  padding-bottom: 3%
+/* ----------------------- */
+/* PARAGRAPHS */
+/* ----------------------- */
+#about
+  background: #fff
+  padding: 30px 80px
+  h3
+    font-family: $lato
+    font-weight: 400
+    font-size: 24px
+    margin-bottom: 20px
+  p
+    font-family: $lato
+    font-weight: 300
+    font-size: 20px
